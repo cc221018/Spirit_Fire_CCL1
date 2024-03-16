@@ -1,0 +1,239 @@
+
+/* fonts from www.dafont.com */
+
+@font-face {
+    font-family: pixel;
+    src: url("fonts/pixel.ttf");
+}
+
+@font-face {
+    font-family: fatPixel;
+    src: url("fonts/fatPixel.TTF");
+}
+
+body {
+    background-color: #212B23;
+    text-align: center;
+    color: #D2FEFF;
+}
+
+.startScreen {
+    width: 50%;
+    margin: auto;
+    display: block;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: solid 2px #D2FEFF;
+    padding: 40px;
+    background-image: url('./images/extra/grass.png');
+    background-repeat: repeat;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    padding: 10px 0px 10px 0px;
+    font-family: fatPixel;
+    font-size: 3.5em;
+}
+
+.glow {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #D2FEFF, 0 0 20px #543EC3, 0 0 30px #543EC3, 0 0 40px #543EC3;
+    }
+    to {
+      text-shadow: 0 0 20px #D2FEFF, 0 0 30px #63E7F0, 0 0 40px #63E7F0;
+    }
+  }
+
+
+h3 {
+    font-family: fatPixel;
+    font-size: 1.3em;
+}
+
+p {
+    font-family: pixel;
+}
+
+.canvas {
+    display: none;
+    margin: auto;
+    width: fit-content;
+    position: relative;
+}
+
+canvas {
+    border: solid 1px #D2FEFF;
+}
+
+.controls {
+    border: solid 1px #D2FEFF;
+    margin: 10px 0px 10px 0px;
+    width: 80%;
+    margin: auto;
+    font-size: 1.1em;
+    background-image: url('./images/extra/green.png');
+}
+
+.explanation {
+    margin: 50px 0px 50px 0px;
+    font-size: 1.1em;
+}
+
+.biomes {
+    border: solid 1px #D2FEFF;
+    margin: 10px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+    background-image: url('./images/extra/green.png');
+}
+
+.level1to5 {
+    display: none;
+    border: solid 1px #D2FEFF;
+    margin: 10px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px 30px 0px;
+    background-image: url('./images/extra/green.png');
+}
+
+.level6to10 {
+    display: none;
+    border: solid 1px #D2FEFF;
+    margin: 10px 0px 10px 0px;
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px 30px 0px;
+    background-image: url('./images/extra/green.png');
+}
+
+/* button from https://getcssscan.com/css-buttons-examples */
+
+button {
+    background-image: linear-gradient(92.88deg, #28969A 9.16%, #5643CC 43.89%, #20668E 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: pixel;
+    font-size: 19px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 5px 10px 5px 10px;
+}
+
+button:hover {
+    box-shadow: #9FFDFF 0 1px 20px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    button {
+    padding: 0 2.6rem;
+  }
+}
+
+.deathScreen {
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    display: none;
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: solid 2px #D2FEFF;
+    padding: 40px;
+    background-image: url('./images/extra/grass.png');
+}
+
+.deathScreen > p {
+    margin: 30px 30px 30px 30px;
+    font-size: 1.1em;
+}
+
+.buttonBox {
+    border: solid 1px #D2FEFF;
+    margin: 10px 20px 10px 20px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-image: url('./images/extra/green.png');
+}
+
+.winScreen {
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    display: none;
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: solid 2px #D2FEFF;
+    padding: 40px;
+    background-image: url('./images/extra/grass.png');
+}
+
+.winScreen > p {
+    margin: 30px 30px 30px 30px;
+    font-size: 1.1em;
+}
+
+.pauseScreen {
+    display: none;
+    width: 40%;
+    margin: auto;
+    display: none;
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: solid 2px #D2FEFF;
+    padding: 40px;
+    background-image: url('./images/extra/grass.png');
+}
+
+.buttonBox2 {
+    border: solid 1px #D2FEFF;
+    margin: 10px 20px 10px 20px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-image: url('./images/extra/green.png');
+}
+
+.volumeBox {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    z-index: 1;
+    width: 100px;
+}
+
+.volumeBox > * {
+    width: 100%;
+    font-family: pixel;
+    font-size: 1.1em;
+}

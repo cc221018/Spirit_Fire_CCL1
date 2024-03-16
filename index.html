@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Spirit Fire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<html>
+    <body>
+        <div class="startScreen">
+
+            <h1 class="glow">SPIRIT FIRE</h1>
+
+            <div class="gameDescription">
+                <div class="controls">
+                    <h3>CONTROLS</h3>
+                    <p><i>W-A-S-D</i> to move  |  <i>SPACE</i> to dash ( 3s cooldown! )</p>
+                    <p><i>ESC</i> to pause</p>
+                    <p>( Bonus: E to bark )</p>
+                </div>
+
+                <div class="explanation">
+                    <p>Help the little Spirit Fox to grow strong enough to escape the forest.
+                        Navigate through the maze of trees, remove obstacles if needed and find a way to collect all the purple soul flames.
+                        <br> And be careful, don't let the wolves catch you!</p>
+                </div>
+
+                <div class="biomes">
+                    <h3>Biomes</h3>
+                    <button onclick="showLevel1to5()">Fir Forest</button>
+                    <button onclick="showLevel6to10()">Mushroom Forest</button>
+                </div>
+
+                <div class="level1to5">
+                    <h3>Fir Forest</h3>
+                    <button onclick="startLevel1()">Level 1</button>
+                    <button onclick="startLevel2()">Level 2</button>
+                    <button onclick="startLevel3()">Level 3</button>
+                    <button onclick="startLevel4()">Level 4</button>
+                    <button onclick="startLevel5()">Level 5</button>
+                    <div class="BackButton">
+                        <button onclick="showBiomes()">Back</button>
+                    </div>
+                </div>
+
+                <div class="level6to10">
+                    <h3>Mushroom Forest</h3>
+                    <button onclick="startLevel6()">Level 6</button>
+                    <button onclick="startLevel7()">Level 7</button>
+                    <button onclick="startLevel8()">Level 8</button>
+                    <button onclick="startLevel9()">Level 9</button>
+                    <button onclick="startLevel10()">Level 10</button>
+                    <div class="BackButton">
+                        <button onclick="showBiomes()">Back</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="deathScreen">
+            <h3>OOPS!</h3>
+            <p>You got hit by a wolf!</p>
+            <div class="buttonBox">
+                <button onclick="retryLevel()">Retry</button>
+                <button onclick="showStartScreen()">Home</button>
+            </div>
+        </div>
+
+        <div class="winScreen">
+            <h3>You did it!</h3>
+            <p>You successfully escaped the forest!</p>
+            <div class="buttonBox2">
+                <button id="next" onclick="tryNextLevel()">Next Level (X)</button>
+                <button onclick="showStartScreen()">Home</button>
+            </div>
+        </div>
+
+        <div class="pauseScreen">
+            <h3>PAUSE</h3>
+            <div class="controls">
+                <h3>CONTROLS</h3>
+                <p><i>W-A-S-D</i> to move | <i>SPACE</i> to dash ( 3s cooldown! )</p>
+                <p><i>ESC</i> to pause</p>
+                <p>( Bonus: E to bark )</p>
+            </div>
+            <div class="explanation">
+                <p>Help the little Spirit Fox to grow strong enough to escape the forest.
+                    Navigate through the maze of trees, remove obstacles if needed and find a way to collect all the purple soul flames.
+                    <br> And be careful, don't let the wolves catch you!</p>
+            </div>
+            <div class="buttonBox2">
+                <button onclick="showCanvasScreen()">Resume</button>
+                <button onclick="showStartScreen()">Home</button>
+            </div>
+        </div>
+
+        <div class="canvas">
+          <canvas id="canvas" width="1530" height="900" style="background-image: url('./images/extra/grass.png'); width: 83vw; height: 96vh;"></canvas>
+          <div class="volumeBox">                       
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="100" value="40">
+        </div>
+        </div>
+
+    </body>
+
+
+    <script src="gameManager.js"></script>
+    <script src="canvas.js"></script>
+
+    <script src="game_objects/generalObject.js"></script>
+    <script src="game_objects/imageObject.js"></script>
+    <script src="game_objects/player.js"></script>
+    <script src="game_objects/wall.js"></script>
+    <script src="game_objects/flame.js"></script>
+    <script src="game_objects/horizontalWolf.js"></script>
+    <script src="game_objects/verticalWolf.js"></script>
+    <script src="game_objects/door.js"></script>
+    <script src="game_objects/key.js"></script>
+ 
+    <script src="levels/level.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="levels/level2.js"></script>
+    <script src="levels/level3.js"></script>
+    <script src="levels/level4.js"></script>
+    <script src="levels/level5.js"></script>
+    <script src="levels/level6.js"></script>
+    <script src="levels/level7.js"></script>
+    <script src="levels/level8.js"></script>
+    <script src="levels/level9.js"></script>
+    <script src="levels/level10.js"></script>
+
+    <script src="stageSetup.js"></script>
+    <script src="inputHandling.js"></script>
+    <script src="buttons.js"></script>
+    <script src="audio.js"></script>
+
+    <script></script>
+    <script></script>
+    <script></script>
+
+
+</html>
